@@ -91,7 +91,7 @@
     padding-top: 10px;
     text-align: left;
     padding-left: 200px;
-    padding-right: 50%;
+    padding-right: 25%;
     line-height:2;
 }
 
@@ -143,5 +143,13 @@ p.big{
 
 .container:hover .overlayTextImage {
   opacity: 1;
+}
+
+/* column resize for smaller screens */
+@media screen and (max-width: 1000px) {
+  .column, .columnBlogRight, .columnBlogLeft, .oneColumnP, .oneColumn {
+    width: 100%;
+      padding: 0px;
+  }
 }
 

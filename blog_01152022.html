@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 <title>W3.CSS Template</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+    </script>
+   
+    
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"><b>InformalDev</b> </a>
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+      
+    <a href="index.html" class="w3-bar-item w3-button"><b>InformalDev</b> </a>
+      
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
       <a href="index.html" class="w3-bar-item w3-button">Blog</a>
-      <a href="gallery.html" class="w3-bar-item w3-button">Gallery</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button">Freelance</a>
       <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
     </div>
   </div>
-</div>
+
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    
+    <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Blog</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Freelance</a>
+    <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
+  </div>
+    </div>
+        </div>
     
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
