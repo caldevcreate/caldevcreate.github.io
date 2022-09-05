@@ -4,9 +4,12 @@
 .column {
     float: left;
     width: 50%;
-    padding-right: 50px;
-    padding-left: 50px;
+    margin: 0;
+    position: relative;
+
+
 }
+
 
 .threeImageColumn{
   float: left;

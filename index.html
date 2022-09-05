@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 </head>
 <body>
 
@@ -22,91 +23,101 @@ function toggleFunction() {
 }
     </script>
    
+  
+<!-- Background Image (sits below) -->
+   
+<head>   
+<style>
+        
+    body {
+        background-color: #004A98;
+    }
+        
+</style>
+</head> 
     
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-    <div class="w3-bar" id="myNavbar">
-  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-      
-    <a href="index.html" class="w3-bar-item w3-button"><b>Cal Dev</b> </a>
-      
-    <!-- Float links to the right. Hide them on small screens -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html" class="w3-bar-item w3-button">Blog</a>
-      <a href="portfolio.html" class="w3-bar-item w3-button">Freelance</a>
-      <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-    </div>
-  </div>
-
+    
     <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     
     <a href="index.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Blog</a>
     <a href="portfolio.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Freelance</a>
     <a href="contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
   </div>
-    </div>
-    </div>
+
+
+        
 
 
 
 <!-- Page content -->
-<div class="w3-content w3-padding" style="max-width:1564px">
+<div class= "w3-center" style="max-width:1800px; padding:125px; margin: auto">   
 
-  <!-- Blog Section -->
-  <div class="w3-container w3-padding-32" id="blog">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Blog</h3>
-  </div>
-
-
-  <div class="column" style="background-color:#fff;">
-    <h2><b>Big Idea, Little Experience</b></h2>
-      <h5>02/05/2022</h5>
-      <img 
-           class="croppedImage";
-           src= "images/inventory%20system.PNG" style="width:100%;"/>
-    <p class="center">
-        Implementing what I have learned so far in my <i>own</i> game
-      </p>
-    <p class="center" class="paddingBottom">
-        <a href="blog_02052022.html"><b>READ MORE</b></a>
-      </p>
-  </div>
+<div style= "align-content: center">
+    <p>
+    <img src="images/Cal%20Rose%20Logo.png" width="600">
+     </p>
+    </div>
+    </div>
+   
     
-  
-    <div class="column" style="background-color:#fff;">
-      
-    <h2><b>BLEND-ing In</b></h2>
-      <h5>01/15/2022</h5>
-      <img 
-           class="croppedImage";
-           src= "images/BELNDER%20HOUSE.PNG" style="width:100%;"/>
-    <p class="center">
-        Grasping Blender concepts and developing low-poly designs through a YouTube course  
-      </p>
-        <p class="center paddingBottom">
-        <a href="blog_01152022.html"><b>READ MORE</b></a>
-      </p>
-
-  </div>
+ <div>  
+   
+<!-- BUTTON STYLE -->
+<style>
+    
+.button {
+    background-color: #EAFF82;
+    border: none;
+    font-size: 16px;
+    color: black;
+    padding: 10px 200px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 200px;
+    width: 75%;
 
     
-<div class="column"  style="background-color:#fff;">
-        
+}
 
-    <h2><b>"Hello World", I Mean C#</b></h2>
-      <h5>01/01/2022</h5>
-      <img 
-           class="croppedImage";
-           src= "images/Unity_Blog_Pic.PNG" style="width:100%;"/>
-    <p class="center">
-        Learning Unity basics with the help of a Udemy course, YouTube, and Unity's Scripting API
-      </p>
-    <p class="center paddingBottom">
-        <a href="blog_01012022.html"><b>READ MORE</b></a>
-        
-      </p>
-        
+.button:hover {
+  background-color: #f1f1f1;
+}
+</style>
+     
+<!-- NAV BAR -->    
+     
+<div class="row">
+  <div class="column">
+    <button class="button"><a href="portfolio.html"></a>My Work</button>
+    </div>
+  <div class="column">
+    <button class="button">In-Progress</button>
+    </div>
+     </div>
+    
+<div class="row">
+  <div class="column">
+    <button class="button">Blog</button>
+    </div>
+  <div class="column">
+    <button class="button"><a href="contact.html"></a>Contact</button>
+    </div>
+     </div>
+
+
+    
+    
+
+    
 </div>
+     
+
+
+
+  
+   
+        
+
