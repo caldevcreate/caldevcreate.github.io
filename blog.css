@@ -3,10 +3,23 @@
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
-    width: 50%;
+    width: 30%;
     text-align: center;
 
+}
 
+
+.columnLeft {
+    float: left;
+    width: 50%;
+    padding-left: 300px;
+}
+
+.columnRight {
+    float: right;
+    width: 50%;
+    padding-right: 300px;
+    padding-left: 40px;
 }
 
 .parent {
@@ -26,7 +39,7 @@
 .image2 {
   position: absolute;
   top: -8%;;
-  left: 40%;
+  left: 43.5%;
 z-index: 0;
 
 }
@@ -34,19 +47,6 @@ z-index: 0;
 .threeImageColumn{
   float: left;
   width: 33.33%;
-}
-
-.columnBlogLeft {
-    float: left;
-    width: 50%;
-    padding-left: 200px;
-}
-
-.columnBlogRight {
-    float: right;
-    width: 50%;
-    padding-right: 200px;
-    padding-left: 40px;
 }
 
 
@@ -169,8 +169,8 @@ p.big{
 }
 
 /* column resize for smaller screens */
-@media screen and (max-width: 1000px) {
-  .column, .columnBlogRight, .columnBlogLeft, .oneColumnP, .oneColumn {
+@media screen and (max-width: 1210px) {
+  .columnRight, .columnLeft {
     width: 100%;
       padding: 0px;
   }
