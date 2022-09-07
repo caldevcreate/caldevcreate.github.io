@@ -1,32 +1,60 @@
 
 /* LAYOUT CSS DESIGNS */
-/* Create two equal columns that floats next to each other */
+
+/* Columns */
 .column {
     float: left;
     width: 30%;
     text-align: center;
-
 }
-
 
 .columnLeft {
     float: left;
     width: 50%;
-    padding-left: 300px;
+    padding-left: 400px;
 }
 
 .columnRight {
     float: right;
     width: 50%;
-    padding-right: 300px;
-    padding-left: 40px;
+    padding-right: 400px;
+
 }
 
-.parent {
-  position: relative;
-  top: 0;
-  left: 0;
+.topPageColumn {
+    
+    float: right;
+    width: 25%;
+    text-align: right;
+    padding-right: 40px;
 }
+
+.threeImageColumnRight{
+  float: left;
+  width: 33.33%;
+  text-align: right;
+}
+
+.threeImageColumnCenter {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+threeImageColumnLeft {
+    float: left;
+  width: 33.33%;
+  text-align: left;
+}
+
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Images */
 
 .image1 {
   position: relative;
@@ -34,28 +62,6 @@
   left: 0;
   z-index: -1;
 
-}
-
-.image2 {
-  position: absolute;
-  top: -8%;;
-  left: 43.5%;
-z-index: 0;
-
-}
-
-.threeImageColumn{
-  float: left;
-  width: 33.33%;
-}
-
-
-/* Clear floats after the columns */
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-    
 }
     
 .croppedImage {
@@ -74,6 +80,54 @@ z-index: 0;
     object-fit: cover;
 }
     
+/* Buttons */
+    
+.button {
+    background-color: #EAFF82;
+    border: none;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: normal;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 65%;
+}
+
+.button a{
+  display: block;
+  background: #EAFF82;
+  border-radius: 100px;
+  width: 100%;
+}
+
+.altButtons {
+    background-color: #EAFF82;
+    border: none;
+    font-size: 16px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: normal;
+    color: black;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 40%;
+    
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Alignments */
+
 .center{
     text-align: center;
 }
@@ -168,9 +222,11 @@ p.big{
   opacity: 1;
 }
 
+
 /* column resize for smaller screens */
+
 @media screen and (max-width: 1210px) {
-  .columnRight, .columnLeft {
+  .columnRight, .columnLeft, .topPageColumn {
     width: 100%;
       padding: 0px;
   }
