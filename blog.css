@@ -41,10 +41,10 @@
   text-align: center;
 }
 
-threeImageColumnLeft {
-    float: left;
+.threeImageColumnLeft {
+  float: left;
   width: 33.33%;
-  text-align: left;
+
 }
 
 /* Clear floats after the columns */
@@ -103,6 +103,22 @@ threeImageColumnLeft {
   background: #EAFF82;
   border-radius: 100px;
   width: 100%;
+}
+
+.imageButtons{
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+
+    
+}
+
+.imageButtons:hover{
+   transform: scale(1.05); 
+    
 }
 
 .altButtons {
@@ -190,6 +206,13 @@ p.big{
   color :#000;
   display:inline-block;
   
+}
+
+/* Heading-Designs */
+
+.headings {
+    text-align: center;
+    color: #EAFF82;
 }
 
 /* Hover over image, caption */
