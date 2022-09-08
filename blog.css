@@ -248,7 +248,7 @@ p.big{
 
 /* column resize for smaller screens */
 
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1230px) {
   .columnRight, .columnLeft, .topPageColumn {
     width: 100%;
       padding: 0px;
