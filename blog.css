@@ -253,5 +253,13 @@ p.big{
     width: 100%;
       padding: 0px;
   }
+
 }
+
+@media screen and (max-width: 1324px) {
+  .threeImageColumnRight, .threeImageColumnCenter, .threeImageColumnLeft {
+    width: 100%;
+      text-align: center;
+    padding: 0px;
+  }
 
