@@ -256,7 +256,7 @@ p.big{
     
     @media screen and (min-device-width: 320px) and (max-width: 479px) {
   .columnRight, .columnLeft, .topPageColumn {
-    width: 100%;
+    width: 50%;
     text-align: center;
     padding: 0px;
   }
@@ -272,7 +272,7 @@ p.big{
     
 @media screen and (min-device-width: 320px) and (max-width: 479px) {
   .threeImageColumnRight, .threeImageColumnCenter, .threeImageColumnLeft {
-    width: 100%;
+    width: 50%;
       text-align: center;
     padding: 0px;
   }
