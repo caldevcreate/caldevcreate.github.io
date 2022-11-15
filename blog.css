@@ -270,5 +270,12 @@ p.big{
     padding: 0px;
   }
     
+    @media screen and (max-width: 420px) {
+  .threeImageColumnRight, .threeImageColumnCenter, .threeImageColumnLeft {
+    width: 100%;
+      text-align: center;
+    padding: 0px;
+  }
+    
     
 
