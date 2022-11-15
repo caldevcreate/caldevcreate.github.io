@@ -254,7 +254,7 @@ p.big{
       padding: 0px;
   }
     
-    @media screen and (max-width: 420px) {
+    @media screen and (min-device-width: 320px) and (max-width: 479px) {
   .columnRight, .columnLeft, .topPageColumn {
     width: 100%;
     text-align: center;
@@ -270,7 +270,7 @@ p.big{
     padding: 0px;
   }
     
-    @media screen and (max-width: 420px) {
+@media screen and (min-device-width: 320px) and (max-width: 479px) {
   .threeImageColumnRight, .threeImageColumnCenter, .threeImageColumnLeft {
     width: 100%;
       text-align: center;
