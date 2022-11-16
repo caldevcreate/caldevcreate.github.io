@@ -54,6 +54,12 @@
     
 }
 
+.topRightNavBarColumn{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
 .largeGalleryColumn{
     flex: 50%;
     max-width: 50%;
@@ -73,6 +79,8 @@
     margin-top: 8px;
 }
 
+
+
 /* Clear floats after the columns */
 .row::after {
     content: "";
@@ -87,6 +95,14 @@
     padding-left: 100px;
     padding-right: 100px;
 }
+
+.topRightNavBar{
+    content: "";
+    text-align: center;
+    clear: both;
+}
+
+
 
 /* Images */
 
